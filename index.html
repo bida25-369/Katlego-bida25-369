@@ -1,47 +1,111 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>My First GitHub Page</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width-device width, initial scale=1.0">
+    <title>Allround-Cars Dealership</title>
+    <script src="./js.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
-
 <body>
 
-    <header>
-
-        <h1>Welcom to My Website!</h1>
-
+    <!-- Navbar -->
+    <section class="hero-row-container">
+    <header class="row container">
+        <a href="#" class="logo row">
+            <h1>Allround-Cars Dealership</h1>
+        </a>
+        <div calss="toggleMenu" onclick="toggleMenu();"></div>
+        <nav class="navigation row">
+            <ul class="row">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
     </header>
+    <!--End Navigation-->
 
+    <!--Hero-->
+        <div>
+            <h1>Find your next dream vehicle here</h1>
+            <br>
+            <p>Home of over 5+ premium,reliable and trusted <br> vehcle brands in the world</p>
+            <br>
+            <a href="inventory.html" class="pill-button">VIEW OUR CATALOGUE</a>
+        </div>
+    
+    </section>
+    <!--End Hero-->
 
+    <section class="car-showcase">
+        <!--Trusted Brands Section-->
+        <div class="trusted-brands">
+            <h2>Trusted Brands</h2>
+            <div class="brand-grid">
+                <!--Brand Logos-->
+                <div class="brand-item">
+                    <img src="images/toyota.png">
+                    <p>Toyota</p>
+                </div>
 
-    <main>
+                <div class="brand-item">
+                    <img src="images/mazda.png">
+                    <p>Mazda</p>
+                </div>
 
-        <p>This is a simple webpage hosted on GitHub Pages</p>
+                <div class="brand-item">
+                    <img src="images/honda.png">
+                    <p>Honda</p>
+                </div>
 
-        <p>Here's a picture of a cute cate</p>
+                <div class="brand-item">
+                    <img src="images/mercedes.png">
+                    <p>Mercedes</p>
+                </div>
 
-        <img src="https://placekitten.com/200/300" alt="A cute kitten">
+                <div class="brand-item">
+                    <img src="images/audi.png">
+                    <p>Audi</p>
+                </div>
+            </div>
+        </div>
 
-        <p> Visit <a href="https://github.com">GitHub</a> to learn more about coding. </p>
+        <!--Most Popular Picks Selection-->
+        <div class="popular-picks">
+            <h2>Most Popular Picks</h2>
+            <div class="picks-grid">
 
-    </main>
+                <div class="pick-item">
+                    <img src="images/toyota-prius.jpg">
+                    <br>
+                    <p>Cars Under P100 000</p>
+                </div>
 
+                <div class="pick-item">
+                    <img src="images/audi.jpg">
+                    <br>
+                    <p>Family SUV's</p>
+                </div>
 
-
-    <footer>
-
-        <p>&copy; 2025 Your Name</p>
-
-    </footer>
+                <div class="pick-item">
+                    <img src="images/fuel-efficeint-mercedes.jpg">
+                    <br>
+                    <p>Fuel efficient vehicle</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
+
+<footer>
+    <p>&copy; 2026 All-round Cars. All rights reserved.</p>
+</footer>
 
 </html>
