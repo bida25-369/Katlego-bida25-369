@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
     font-weight: 400;
-    color: #f0f0f0;
 }
 
 body{
@@ -109,6 +108,7 @@ nav li:nth-of-type(5) a::after{
 
 .hero-row-container{
     font-size: large;
+    color: #f0f0f0;
     display: flex;
     flex-direction: column;
     margin-bottom: 60px;
@@ -141,6 +141,7 @@ nav li:nth-of-type(5) a::after{
 }
 
 .trusted-brands{
+    color: #ffffff;
     background-color: rgb(21, 21, 21);
     border-radius: 20px;
 }
@@ -190,6 +191,7 @@ padding: 20px;
 /*Inventory Page*/
 
 .inventory-hero-section{
+    color: #f0f0f0;
     font-size: large;
     text-align: right;
     display: flex;
@@ -198,7 +200,7 @@ padding: 20px;
     justify-content: center;
     min-height: 600px;
     position: justify;
-    background-image:url(images/inventory-hero.jpg);
+    background-image:url(images/hero3.jpg);
     border-radius: 40px;
     background-size:cover;
     background-position: center;
@@ -207,68 +209,164 @@ padding: 20px;
 
 /*Car Grid Section*/
 
-.main-container{
-    display: flex;
-}
 
 .car-grid-container{
-    width: 70%;
-    margin-top: auto;
-    padding: 90px;
-}
-
-/*Hero Banner*/
-
-.sidebar{
-    background-color: #424242;
-    border-radius: 10px;
-    flex: 1;
-    height: 1117px;
-    margin-top:89px;
-    text-align: center;
-}
-
-/*Grid Layout*/
-.car-grid{
-    flex: 3;
     display: grid;
-    margin-left: 20%;
-    margin-right: 0%;
-    background-color: #424242;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 90px;
+    margin-top: auto;
+    padding: 100px;
 }
 
 /*Individual Cards*/
 
 .car-card{
-    margin-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 10%;
-    border: 3px solid #000000;
-    text-align: center;
-    padding: 15px;
-
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
 }
 
 .image-placeholder{
-    height: 100px;
-    width: 95%;
-    margin-bottom: 100px;
-    position: flex;
+    padding: 10px;
+    width: 600px;
+    display: block;
 }
 
 .card-content h3{
     color: #000;
+    font-weight: bold;
     margin: 10px 0 5px;
     font-size: 1.1rem;
 }
 
-.card-content p{
+.card-content{
+    text-align: center;
     color: #000000;
     margin: 0;
 }
 
+/*About us page*/
 
+.about-container{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/aboutroad.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 5px 5px #5D6166;
+    color: #ffffff;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
 
+.contact-info{
+    margin-right: auto;
+    backdrop-filter: blur(1.5px);
+    padding-top: 40px;
+    padding-bottom: 200px;
+    width: 40%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero-text{
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.about{
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.about-content{
+    backdrop-filter: blur(1.5px);
+    margin-left: auto;
+    width: 45%;
+    text-align: center;
+    padding-top: 60px ;
+    padding-right: 30px;
+    padding-left: 20px;
+}
+
+/*Blog*/
+
+.blog-hero-section{
+    color: #f0f0f0;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    justify-content: center;
+    min-height: 600px;
+    position: justify;
+    background-image:url(images/bloghero.jpg);
+    border-radius: 40px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blog-hero-text{
+    text-align: center;
+}
+
+.blog-title{
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.blog-container{
+    display: flex;
+    margin-bottom: 20px;
+    background-image: url(images/pexels3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.sidebar{
+    background-color: #cdcdcd;
+    padding: 20px;
+    position: right;
+    width: 40%;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.tips{
+    background-color: #cdcdcd;
+    border-radius: 20px;
+    padding: 20px;
+    margin-right: auto;
+    width: 50%;
+}
+
+.blog-pic{
+    width: 650px;
+    align-content: center;
+}
+
+.small-card{
+    display: flex;
+    flex-direction: row;
+}
+
+.small-card h3{
+    font-weight: bold;
+}
+
+.small-card img{
+    width: 150px;
+}
+
+/*feedback*/
+
+.feedback-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
