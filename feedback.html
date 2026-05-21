@@ -44,8 +44,10 @@
                 </label>
             </div>
             <label>
-                <input type="number" required>
+                <input id="number" type="number" required>
                 <span>Contact No</span>
+                <button class="submit" type="button" onclick="myFunction()">Validate</button>
+                <p id="demo"></p>
             </label>
             <label>
                 <input type="text" required>
@@ -57,6 +59,21 @@
             </label>
             <button class="submit">Submit</button>
         </form>
+
+        <script>
+        function myFunction() {
+             // Get the value of the input field with id="numb"
+            let x = document.getElementById("number").value;
+            // If x is Not a Number or less than one or greater than 10
+             let text;
+            if (isNaN(x) || x.length !==8) {
+            text = "Input not valid, 8 digit phone number required";
+            } else {
+            text = "Input OK";
+             }
+            document.getElementById("demo").innerHTML = text;
+            }
+        </script>
     </article>
     </body>
 
