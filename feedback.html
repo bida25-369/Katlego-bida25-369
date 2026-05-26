@@ -61,10 +61,8 @@
         </form>
 
         <script>
-        function myFunction() {
-             // Get the value of the input field with id="numb"
+        function myFunction() 
             let x = document.getElementById("number").value;
-            // If x is Not a Number or less than one or greater than 10
              let text;
             if (isNaN(x) || x.length !==8) {
             text = "Input not valid, 8 digit phone number required";
